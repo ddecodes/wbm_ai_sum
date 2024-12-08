@@ -173,7 +173,7 @@ for msg in st.session_state.messages:
                 st.write(msg["content"])
 
 # Chat input
-user_input = st.chat_input("Type your message here...", key="user_input")
+user_input = st.chat_input("Ask the copilot..", key="user_input")
 
 if user_input:
     process_user_input(user_input)

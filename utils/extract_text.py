@@ -10,21 +10,7 @@ logging.basicConfig(
 
 
 def fetch_and_extract_text(url: str) -> Optional[str]:
-    """
-    Fetches a webpage and extracts its main textual content.
-
-    This function retrieves the HTML content of a given URL, then uses the
-    trafilatura library to extract relevant metadata and the main text content.
-    It focuses on extracting the title and the visible text content, discarding
-    boilerplate elements like navigation, headers, footers, etc.
-
-    :param url: The URL of the webpage to fetch and extract text from.
-                This should be a full URL including the protocol.
-    :type url: str
-    :return: A string containing the extracted text content, or None
-             if an error occurs during fetching or processing.
-    :rtype: Optional[str]
-    """
+   
     try:
         logging.info(f"Fetching content from {url}")
         response = requests.get(url)
